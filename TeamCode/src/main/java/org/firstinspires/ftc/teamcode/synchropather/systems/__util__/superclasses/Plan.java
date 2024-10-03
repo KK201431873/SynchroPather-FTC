@@ -80,7 +80,7 @@ public abstract class Plan<T extends RobotState> {
 	public abstract void loop();
 
 	/**
-	 * Calling loop() will control this Plan's robot subsystem to the RobotState at targetTime.
+	 * Halt this Plan's subsystem.
 	 */
 	public abstract void stop();
 	

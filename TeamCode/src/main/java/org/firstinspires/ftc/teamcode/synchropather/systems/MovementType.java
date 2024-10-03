@@ -9,11 +9,16 @@ public enum MovementType {
 		 * A Movement involving the global x and y coordinates.
 		 */
 		TRANSLATION(),
-		
+
 		/**
 		 * A Movement involving the global heading.
 		 */
-		ROTATION();
+		ROTATION(),
+
+		/**
+		 * A Movement involving the lift.
+		 */
+		LIFT();
 
 		MovementType() {};
 }

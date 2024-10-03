@@ -40,6 +40,15 @@ public class TimeSpan {
 	}
 
 	/**
+	 * Clamps the given elapsedTime within this TimeSpan.
+	 * @param elapsedTime
+	 * @return the clamped elapsedTime.
+	 */
+	public double clamp(double elapsedTime) {
+		return Math.max(startTime, Math.min(endTime, elapsedTime));
+	}
+
+	/**
 	 * @return the String representation of this TimeSpan.
 	 */
 	public String toString() {
